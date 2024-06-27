@@ -3,7 +3,7 @@ import ListItem from './listItem';
 
 const List = ({ list, listIndex, cardIndex }) => {
     return (
-        <div className='bg-[#f0f0f0] p-2 rounded'>
+        <div className=' bg-[#e6c3d4da] p-2 rounded'>
             <ListItem list={list} listIndex={listIndex} cardIndex={cardIndex} />
         </div>
     );

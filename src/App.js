@@ -17,12 +17,19 @@ const App = () => {
         + Add a card
         {showCardInput &&  <CardInput />}
      </button>
+     {
+                showCardInput &&   <button  className='text-[18px] mx-auto bg-white w-[100px] rounded-lg px-5 py-2 text-black ' onClick={()=>setShowCardInput(false)}>   <p className='text-[14px] text-center'>remove</p> </button>
+           
+            }
            
             <div className='flex flex-row gap-4'>
                 {cards.map((card, cardIndex) => (
                     <Card key={card.id} card={card} cardIndex={cardIndex} />
                 ))}
+                
             </div>
+          
+          
         </div>
     );
 };

@@ -21,8 +21,8 @@ const Card = ({ card, cardIndex }) => {
 
     return (
         <div className='w-[200px] bg-[#cfa1b7da]  rounded-md p-4 my-2 flex flex-col gap-4'>
-            <div className='flex justify-between items-center  rounded-lg'>
-                <h4 className='text-black font-semibold italic text-left bg-[#e6c3d4da] w-96 rounded-lg p-2'>{card.title}</h4>
+            <div className='flex justify-between items-center border-b-2 '>
+                <h4 className='text-black font-semibold italic text-center w-96'>{card.title}</h4>
                 
             </div>
             <div className='flex flex-col gap-2 '>
@@ -39,13 +39,13 @@ const Card = ({ card, cardIndex }) => {
                     onChange={handleNewListChange}
                 />
                 <button
-                    className='bg-white text-black p-2 rounded-xl text-sm italic'
+                    className='bg-white text-black p-2 rounded-xl text-sm italic border-slate-600'
                     onClick={handleAddList}
                 >
                     Add to list
                 </button>
-                <button onClick={() => dispatch(removeCard(cardIndex))}>
-                    <RxCross2 className='text-[18px] bg-white w-[50px] rounded-lg p-2 text-black' />
+                <button  className='text-[18px] mx-auto bg-white w-[100px] rounded-lg px-5 py-2 text-black ' onClick={() => dispatch(removeCard(cardIndex))}>
+                   <p className='text-[14px] text-center'>remove</p> 
                 </button>
             </div>
         </div>
