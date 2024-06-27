@@ -11,7 +11,7 @@ const App = () => {
     return (
         <div className='flex flex-col items-center gap-4 bg-[#cd83a7] h-screen'>
             <button
-        className='text-xl font-semibold italic gap-4 bg-[#CE94B0] w-[300px] rounded-xl p-2 hover:bg-[#dcadc4] text-white mx-[460px]'
+        className='text-xl font-semibold italic gap-4 bg-[#CE94B0] w-[300px] rounded-xl p-2 hover:bg-[#dcadc4] text-white mx-[460px] my-2'
         onClick={() => setShowCardInput(true)}
       >
         + Add a card
